@@ -609,11 +609,6 @@ textarea:focus {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.submit-prat:hover {
-  background-color: white;
-  color: #fc2956;
-  border: 2px #fc2956 solid;
-}
 
 .footer {
   display: flex;
