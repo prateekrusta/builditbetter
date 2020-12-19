@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -41,7 +41,7 @@ body {
   -ms-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-button:focus{
+button:focus {
   outline: none;
   cursor: pointer;
 }
@@ -79,7 +79,7 @@ nav.logo {
   letter-spacing: 1px;
   justify-content: space-evenly;
   align-items: right;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
 }
 .nav-links li .nav-link-prat {
@@ -91,7 +91,7 @@ nav.logo {
   border-radius: 30px;
 }
 
-.nav-links li .nav-button-prat{
+.nav-links li .nav-button-prat {
   border-radius: 30px;
   padding: 10px 15px;
   position: relative;
@@ -154,6 +154,16 @@ nav.logo {
     transform: translate(-5%, -50%);
     z-index: 2;
     transition: all 0.7s ease;
+    padding: 5px;
+  }
+  .hamburger:hover {
+    background-color: #393a70;
+    transition: all 0.5s ease-in-out;
+  }
+  .hamburger:hover .line1,
+  .hamburger:hover .line2,
+  .hamburger:hover .line3 {
+    background-color: #fc2956;
   }
   .nav-links {
     position: fixed;
@@ -218,8 +228,6 @@ nav.logo {
   align-items: center;
 }
 
-
-
 .modal {
   position: fixed;
   top: 0;
@@ -234,14 +242,14 @@ nav.logo {
   padding: 0;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: visibility 0s linear 0.1s,opacity 0.3s ease;
-  transition: visibility 0s linear 0.1s,opacity 0.3s ease;
+  -webkit-transition: visibility 0s linear 0.1s, opacity 0.3s ease;
+  transition: visibility 0s linear 0.1s, opacity 0.3s ease;
 }
 .modal.open {
   visibility: visible;
   opacity: 1;
   -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
 }
 .modal__overlay {
   position: fixed;
@@ -273,7 +281,7 @@ nav.logo {
   height: 400px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   box-shadow: 0 0 10px #fff;
   margin: 0 auto;
   padding: 30px;
@@ -281,7 +289,7 @@ nav.logo {
   text-align: center;
 }
 
-.modal .heading{
+.modal .heading {
   color: #fc2956;
   font-family: "Poppins", sans-serif;
   font-size: 30px;
@@ -289,21 +297,17 @@ nav.logo {
   letter-spacing: 2px;
 }
 
-.model input[type=text]
-{
+.model input[type="text"] {
   border-radius: 20px;
   border: 2px solid #fc2956;
   padding: 20px;
 }
 
-.model input[type=password]
-{
+.model input[type="password"] {
   border-radius: 20px;
   border: 2px solid #fc2956;
   padding: 20px;
 }
-
-
 
 .main {
   background: #0f0c29;
@@ -340,7 +344,7 @@ nav.logo {
   letter-spacing: 1px;
 }
 
-.btnprat-before {
+a.btnprat-before {
   border-radius: 30px;
   padding: 10px 20px;
   border: none;
@@ -351,9 +355,14 @@ nav.logo {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+}
+a.btnprat-before:hover {
+  background-color: #393a70;
+  transition: all 0.5s ease-in-out;
 }
 
-.btnprat-after {
+a.btnprat-after {
   border-radius: 30px;
   padding: 10px 20px;
   border: none;
@@ -364,17 +373,23 @@ nav.logo {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
 }
-
+a.btnprat-after:hover {
+  background-color: #fc2956;
+  transition: all 0.5s ease-in-out;
+}
 .about {
   height: auto;
   padding: 30px;
   justify-content: space-between;
   display: flex;
+  margin: 0 70px;
 }
 
 .about-in-2 {
   padding: 50px;
+  margin-left: 50px;
 }
 
 .about .heading {
@@ -398,7 +413,7 @@ nav.logo {
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background-attachment: fixed;
-  height: auto;
+  height: 460px;
 }
 
 .fields .heading {
@@ -421,6 +436,8 @@ nav.logo {
 
 .icons {
   text-align: center;
+  color: #fc2956;
+  transition: all 0.7s ease-in-out;
 }
 
 .fields-in {
@@ -428,6 +445,7 @@ nav.logo {
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 30px;
+  transition: all 0.7s ease-in-out;
 }
 
 .fields-in p {
@@ -436,7 +454,16 @@ nav.logo {
   padding-top: 20px;
   text-align: center;
 }
-
+.fields-in:hover {
+  width: 250px;
+  height: 180px;
+  background-color: #fc2956;
+  border-radius: 50px;
+}
+.fields-in:hover .icons i {
+  font-size: 75px;
+  color: #0f0c29;
+}
 /*---IMAGES---*/
 
 .img-main {
@@ -452,21 +479,20 @@ nav.logo {
   height: 350px;
 }
 
-
 /* Contact */
 
-.contacts{
+.contacts {
   padding: 70px;
 }
 
-.contacts .heading{
+.contacts .heading {
   color: #fc2956;
   font-family: "Poppins", sans-serif;
   font-size: 50px;
   font-weight: 600;
   letter-spacing: 2px;
   margin-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .contacts-1 {
@@ -480,7 +506,7 @@ nav.logo {
   flex-direction: column;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
@@ -492,7 +518,7 @@ input:focus{
   padding-left: 20px;
 }
 
-::placeholder{
+::placeholder {
   color: #fc2956;
   letter-spacing: 2px;
   font-family: "Poppins", sans-serif;
@@ -515,25 +541,28 @@ textarea {
   padding-left: 20px;
 }
 
-textarea:focus{
+textarea:focus {
   outline: none;
 }
 
-.submit-prat{
+.submit-prat {
   border-radius: 30px;
   padding: 10px 20px;
   border: none;
   letter-spacing: 1px;
-  margin-top:20px;
+  margin-top: 20px;
   margin-left: 10px;
   background-color: #fc2956;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
-
-.footer{
+.submit-prat:hover {
+  background-color: #393a70;
+}
+.footer {
   display: flex;
   border-top-left-radius: 30px 20px;
   border-top-right-radius: 30px 20px;
@@ -550,23 +579,23 @@ textarea:focus{
   padding: 20px;
 }
 
-.footer-right{
+.footer-right {
   position: relative;
   top: 8px;
 }
 
-.footer i{
+.footer i {
   margin-left: 5px;
   margin-right: 5px;
   color: white;
   transition: color 0.5s;
 }
 
-.footer i:hover{
-  color:#fc2956;
+.footer i:hover {
+  color: #fc2956;
 }
 
-.footer-left{
+.footer-left {
   margin-left: 40px;
 }
 
