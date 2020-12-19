@@ -15,6 +15,15 @@ body {
   font-weight: 300;
 }
 
+.ayush .heading{
+  margin-top: 70px ;
+  color: #fc2956;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -49,9 +58,9 @@ button:focus {
 nav {
   height: 70px;
   width: 100vw;
-  background: #141e30;
-  background: -webkit-linear-gradient(to right, #243b55, #141e30);
-  background: linear-gradient(to right, #243b55, #141e30);
+  background: #0f0c29; 
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
@@ -89,6 +98,7 @@ nav.logo {
   transition: background-color 0.5s;
   color: white;
   border-radius: 30px;
+  letter-spacing: 2px;
 }
 
 .nav-links li .nav-button-prat {
@@ -104,6 +114,7 @@ nav.logo {
   font-weight: 600;
   margin-left: 10px;
   margin-right: 10px;
+  letter-spacing: 2px;
 }
 
 .nav-links li .nav-link-prat:hover {
@@ -278,7 +289,7 @@ nav.logo {
   position: relative;
   z-index: 22;
   width: 600px;
-  height: 400px;
+  height: auto;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -295,18 +306,40 @@ nav.logo {
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 2px;
+  margin-bottom: 30px;
 }
 
-.model input[type="text"] {
-  border-radius: 20px;
-  border: 2px solid #fc2956;
-  padding: 20px;
+#hello:focus{
+  outline: none;
 }
 
-.model input[type="password"] {
+#hello-submit:focus{
+  outline: none;
+}
+
+#hello{
   border-radius: 20px;
   border: 2px solid #fc2956;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+   font-family: "Poppins", sans-serif; 
+  letter-spacing: 2px;
+}
+
+#hello-submit{
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: none;
+  letter-spacing: 1px;
+  background-color: #fc2956;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 .container {
@@ -323,9 +356,7 @@ nav.logo {
 .py-3 {
   padding: 3rem 0;
 }
-section {
-  top: 17%;
-}
+
 .section-title {
   font-size: 2rem;
   display: block;
@@ -336,7 +367,7 @@ section {
 }
 
 .items {
-  margin-top: 100px;
+  margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;

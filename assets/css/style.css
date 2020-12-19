@@ -49,9 +49,9 @@ button:focus {
 nav {
   height: 70px;
   width: 100vw;
-  background: #141e30;
-  background: -webkit-linear-gradient(to right, #243b55, #141e30);
-  background: linear-gradient(to right, #243b55, #141e30);
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
@@ -76,7 +76,7 @@ nav.logo {
 .nav-links {
   display: flex;
   list-style: none;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   justify-content: space-evenly;
   align-items: right;
   font-family: "Lato", sans-serif;
@@ -104,6 +104,7 @@ nav.logo {
   font-weight: 600;
   margin-left: 10px;
   margin-right: 10px;
+  letter-spacing: 2px;
 }
 
 .nav-links li .nav-link-prat:hover {
@@ -278,7 +279,7 @@ nav.logo {
   position: relative;
   z-index: 22;
   width: 600px;
-  height: 400px;
+  height: auto;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -295,18 +296,40 @@ nav.logo {
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 2px;
+  margin-bottom: 30px;
 }
 
-.model input[type="text"] {
-  border-radius: 20px;
-  border: 2px solid #fc2956;
-  padding: 20px;
+#hello:focus{
+  outline: none;
 }
 
-.model input[type="password"] {
+#hello-submit:focus{
+  outline: none;
+}
+
+#hello{
   border-radius: 20px;
   border: 2px solid #fc2956;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+   font-family: "Poppins", sans-serif; 
+  letter-spacing: 2px;
+}
+
+#hello-submit{
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: none;
+  letter-spacing: 1px;
+  background-color: #fc2956;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 .main {
@@ -525,11 +548,12 @@ input:focus {
 
 textarea {
   margin: 10px;
-  height: 170px;
+  height: 160px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 2px solid #fc2956;
   padding-left: 20px;
+  padding-top: 10px;
 }
 
 textarea:focus {

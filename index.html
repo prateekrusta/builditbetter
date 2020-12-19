@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build it Better</title>
+    <title> OWASP TIET | HOME </title>
 
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="icon" href="./assets/logo/favicon.png" type="image/png" sizes="16x16">
 </head>
 <body>
     <!-- Navbar -->
@@ -21,11 +23,11 @@
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#" class="nav-link-prat">Home</a></li>
-            <li><a href="#" class="nav-link-prat">About Us</a></li>
-            <li><a href="events.html" target="_blank" class="nav-link-prat">Events</a></li>
-            <li><a href="#" class="nav-link-prat">Contact</a></li>
-            <li><a href="#jsModal" id="popup" class="jsModalTrigger"><button class="nav-button-prat btn">Login</button></a></li>
+            <li><a href="#" class="nav-link-prat">HOME</a></li>
+            <li><a href="#" class="nav-link-prat">ABOUT US</a></li>
+            <li><a href="events.html" target="_blank" class="nav-link-prat">EVENTS</a></li>
+            <li><a href="#" class="nav-link-prat">CONTACT</a></li>
+            <li><a href="#jsModal" id="popup" class="jsModalTrigger"><button class="nav-button-prat btn">LOGIN</button></a></li>
         </ul>
     </nav>
 
@@ -35,11 +37,15 @@
         <div class="modal__overlay jsOverlay"></div>
         <div class="modal__container">
           <div class="heading">Login</div>
-                <form>
-                    <input type="text" placeholder="Username" required><br><br>
-                    <input type="password" placeholder="Password" required>
-                </form>
           <button class="modal__close jsModalClose">&#10005;</button>
+            <div class="modal-form">
+
+                <input type="text" placeholder="Username" required id="hello" autocomplete="off" required>
+                <br>
+                <input type="password" placeholder="Password" required id="hello" required>
+                <br>
+                <a href="logged_in.html"><input type="Submit" id="hello-submit"></a>
+            </div>
         </div>
     </div>
 
@@ -47,7 +53,7 @@
 
     <div class="main">
         <div class="main-in">
-            <p class="p1"> <span style="color: white;"> Welcome to </span> <br> OWASP TIET </p>
+            <p class="p1"> <span style="color: white;"> Welcome to</span> <br> OWASP TIET </p>
             <p class="p2"> Open Web Application <br> Security Project </p>
             <a href="#" class="btnprat-before"> WHAT WE DO?</a>
             <a href="#" class="btnprat-after"> JOIN US!</a>
@@ -64,7 +70,7 @@
             <img src="./assets/images/pic2.svg" class="img-about">
         </div>
         <div class="about-in-2">
-            <div class="heading"> ABOUT US </div>
+            <div class="heading"> About Us </div>
             <p class="p1"> Thapar Institute of Engineering and Technology (TIET) has been a steady source of highly skilled talent to the nation as well as overseas. A pioneer in engineering education, research and innovation. The team of OWASP Student Chapter, one of the gilt-edged coding society, involves ingenious mind solvers who are eager to make the world a better place to live in with their innovative techniques and discoveries. By successfully organizing many hackathons, tech-talks, workshops and coding nights, we have always strived hard to maintain the coding culture throughout the campus. </p>
         </div>
     </div>
@@ -72,7 +78,7 @@
 <!-- Fields -->
 
 <div class="fields">
-        <div class="heading"> We can help you with: </div>
+        <div class="heading"> We can help you with : </div>
     <div class="fields-out">
 
         <div class="fields-in fields-in-1">
