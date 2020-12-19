@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> OWASP TIET | HOME </title>
+    <title> OWASP | Home </title>
 
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
     <link rel="icon" href="./assets/logo/favicon.png" type="image/png" sizes="16x16">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/events.css">
+
+    <script src="https://kit.fontawesome.com/7f967191d3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <div id="home"></div>
+
     <!-- Navbar -->
     <nav>
         <div class="logo">
@@ -23,10 +32,10 @@
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#" class="nav-link-prat">HOME</a></li>
-            <li><a href="#" class="nav-link-prat">ABOUT US</a></li>
-            <li><a href="events.html" target="_blank" class="nav-link-prat">EVENTS</a></li>
-            <li><a href="#" class="nav-link-prat">CONTACT</a></li>
+            <li><a href="#home" class="nav-link-prat">HOME</a></li>
+            <li><a href="#about" class="nav-link-prat">ABOUT US</a></li>
+            <li><a href="#event" class="nav-link-prat">EVENTS</a></li>
+            <li><a href="#contact" class="nav-link-prat">CONTACT</a></li>
             <li><a href="#jsModal" id="popup" class="jsModalTrigger"><button class="nav-button-prat btn">LOGIN</button></a></li>
         </ul>
     </nav>
@@ -44,7 +53,7 @@
                 <br>
                 <input type="password" placeholder="Password" required id="hello" required>
                 <br>
-                <a href="logged_in.html"><input type="Submit" id="hello-submit"></a>
+                <a href="logged_in.html"><input type="Submit" id="hello-submit" value="Login"></a>
             </div>
         </div>
     </div>
@@ -55,8 +64,8 @@
         <div class="main-in">
             <p class="p1"> <span style="color: white;"> Welcome to</span> <br> OWASP TIET </p>
             <p class="p2"> Open Web Application <br> Security Project </p>
-            <a href="#" class="btnprat-before"> WHAT WE DO?</a>
-            <a href="#" class="btnprat-after"> JOIN US!</a>
+            <a href="#wedo" class="btnprat-before"> WHAT WE DO?</a>
+            <a href="joinus.html" class="btnprat-after"> JOIN US!</a>
         </div>
         <div class="main-in-2">
             <img src="./assets/images/pic.svg" class="img-main">
@@ -65,20 +74,24 @@
 
     <!-- About -->
 
+    <div id="about" style="position: relative; top: -70px;"></div>
+
     <div class="about">
         <div class="about-in">
             <img src="./assets/images/pic2.svg" class="img-about">
         </div>
         <div class="about-in-2">
-            <div class="heading"> About Us </div>
+            <div class="heading"> <i class="fas fa-address-card"></i> About Us </div>
             <p class="p1"> Thapar Institute of Engineering and Technology (TIET) has been a steady source of highly skilled talent to the nation as well as overseas. A pioneer in engineering education, research and innovation. The team of OWASP Student Chapter, one of the gilt-edged coding society, involves ingenious mind solvers who are eager to make the world a better place to live in with their innovative techniques and discoveries. By successfully organizing many hackathons, tech-talks, workshops and coding nights, we have always strived hard to maintain the coding culture throughout the campus. </p>
         </div>
     </div>
 
 <!-- Fields -->
 
+<div id="wedo" style="position: relative; top: -70px;"></div>
+
 <div class="fields">
-        <div class="heading"> We can help you with : </div>
+        <div class="heading"> <i class="fas fa-headset"></i> We can help you with  </div>
     <div class="fields-out">
 
         <div class="fields-in fields-in-1">
@@ -110,15 +123,146 @@
 
 <!-- Events -->
 
-<div class="events">
-    
+<div id="event" style="position: relative; top: -70px;"></div>
+
+<section id="work-a" class="text-center py-3 ayush">
+    <div class="heading"><i class="far fa-calendar-alt"></i> Events </div>
+    <div class="container">
+        <div class="items">
+            <div class="item">
+                <div class="item-image">
+                    <img src="./assets/images/items/codigo.jpg" alt="" style="height: 100%;">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                        <p class="item-text-category">SOCIETY EVENTS</p>
+                        <h2 class="item-text-title">CODIGO</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./assets/images/items/hacking.jpg" alt="" style="height: 100%;">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                        <p class="item-text-category">SOCIETY EVENTS</p>
+                        <h2 class="item-text-title">HACKOWASP</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./assets/images/items/theta.jpg" alt="" style="height: 100%;">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                        <p class="item-text-category">SOCIETY EVENTS</p>
+                        <h2 class="item-text-title">THETA</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./assets/images/items/webd.jpg" alt="" style="height: 100%;">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                        <p class="item-text-category">WORKSHOP</p>
+                        <h2 class="item-text-title">WEBSITE DESIGNING</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./assets/images/items/ideathon.jpg" alt="" style="height: 100%;">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                        <p class="item-text-category">SOCIETY EVENTS</p>
+                        <h2 class="item-text-title">IDEATHON</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./assets/images/items/graphic.png" alt="" style="height: 100%;">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                        <p class="item-text-category">WORKSHOP</p>
+                        <h2 class="item-text-title">GRAPHIC DESIGNING</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./assets/images/items/finance.jpg" alt="" style="height: 100%;">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                        <p class="item-text-category">WORKSHOP</p>
+                        <h2 class="item-text-title">NON TECH</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./assets/images/items/coding.jpg" alt="" style="height: 100%;">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                        <p class="item-text-category">WORKSHOP</p>
+                        <h2 class="item-text-title">COMPETITIVE CODING</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="./assets/images/items/python.jpg" alt="" style="height: 100%;">
+                </div>
+                <div class="item-text">
+                    <div class="item-text-wrap">
+                        <p class="item-text-category">WORKSHOP</p>
+                        <h2 class="item-text-title">ML AND AI WITH PYTHON</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!-- YT VIDS -->
+
+<div class="ytvids">
+<div class="heading"> <i class="fab fa-youtube"></i> YouTube Videos </div>
+
+<div class="ytvids-out">
+    <div class="ytvids-in ytvids-in-1">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/8HySuHti7I4"></iframe>
+    </div>
+    <div class="ytvids-in ytvids-in-2">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/bHcatrpIsYQ"></iframe>
+    </div>
+    <div class="ytvids-in ytvids-in-3">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/45Vm2SNQty0"></iframe>
+    </div>
+    <div class="ytvids-in ytvids-in-4">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/96PWcriFgS8"></iframe>
+    </div>
+</div>
+
 </div>
 
 <!-- Contact -->
 
+<div id="contact"></div>
+
 <div class="contacts">
     <form>
-        <div class="heading"> Let's Get In Touch </div>
+        <div class="heading"> <i class="fas fa-id-card"></i> Let's Get In Touch </div>
         <div class="contacts-1">
             <div class="contacts-1-in-1">
                 <input type="text" placeholder="Your Name" required>
