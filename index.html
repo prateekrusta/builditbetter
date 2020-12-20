@@ -31,7 +31,7 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="hellu">
             <li><a href="#home" class="nav-link-prat">HOME</a></li>
             <li><a href="#about" class="nav-link-prat">ABOUT US</a></li>
             <li><a href="#event" class="nav-link-prat">EVENTS</a></li>
@@ -52,11 +52,25 @@
                 <input type="text" placeholder="Username" required id="hello" autocomplete="off" required>
                 <br>
                 <input type="password" placeholder="Password" required id="hello" required>
+                <br><br>
+                <a href="#" style="text-decoration: none;"><span style="color: #393a70;">Forget Password?</span></a>
                 <br>
                 <a href="logged_in.html"><input type="Submit" id="hello-submit" value="Login"></a>
             </div>
         </div>
     </div>
+
+        <!-- Join Us -->
+
+        <div id="jsModal_prat" class="modal">
+            <div class="modal__overlay jsOverlay"></div>
+            <div class="modal__container">
+              <div class="heading"> Join Us! </div>
+              <button class="modal__close jsModalClose">&#10005;</button>
+                <p style="line-height: 30px;">Recruitmemnts are currently over. <br> We will soon be out with new dates. <br> Stay Tuned!</p>
+            </div>
+        </div>
+    
 
     <!-- Home -->
 
@@ -65,7 +79,7 @@
             <p class="p1"> <span style="color: white;"> Welcome to</span> <br> OWASP TIET </p>
             <p class="p2"> Open Web Application <br> Security Project </p>
             <a href="#wedo" class="btnprat-before"> WHAT WE DO?</a>
-            <a href="joinus.html" class="btnprat-after"> JOIN US!</a>
+            <a href="#jsModal_prat" class="btnprat-after jsModalTrigger"> JOIN US!</a>
         </div>
         <div class="main-in-2">
             <img src="./assets/images/pic.svg" class="img-main">
