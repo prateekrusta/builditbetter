@@ -49,9 +49,19 @@ button:focus {
 nav {
   height: 70px;
   width: 100vw;
-  background: #0f0c29;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
@@ -177,9 +187,14 @@ nav.logo {
     pointer-events: none;
   }
 
-  #hellu{
-    background: #0f0c29;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  #hellu {
+    background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #24243e,
+      #302b63,
+      #0f0c29
+    ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     margin-top: -20px;
   }
@@ -304,15 +319,15 @@ nav.logo {
   margin-bottom: 20px;
 }
 
-#hello:focus{
+#hello:focus {
   outline: none;
 }
 
-#hello-submit:focus{
+#hello-submit:focus {
   outline: none;
 }
 
-#hello{
+#hello {
   border-radius: 20px;
   border: 2px solid #fc2956;
   padding: 10px;
@@ -320,11 +335,11 @@ nav.logo {
   width: 50%;
   margin-top: 10px;
   margin-bottom: 10px;
-   font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
 
-#hello-submit{
+#hello-submit {
   border-radius: 30px;
   padding: 10px 20px;
   border: none;
@@ -483,7 +498,7 @@ a.btnprat-after {
   color: #0f0c29;
 }
 
-.ytvids{
+.ytvids {
   padding: 30px;
   background: #0f0c29;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
@@ -492,7 +507,7 @@ a.btnprat-after {
   height: auto;
 }
 
-.ytvids .heading{
+.ytvids .heading {
   text-align: center;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -510,7 +525,7 @@ a.btnprat-after {
   padding: 30px;
 }
 
-.responsive-iframe{
+.responsive-iframe {
   width: 90%;
   height: 280px;
   margin: 20px;
@@ -744,7 +759,9 @@ textarea:focus {
   .contacts-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .contacts input[type="text"], textarea, .contacts input[type="email"]{
+  .contacts input[type="text"],
+  textarea,
+  .contacts input[type="email"] {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 0px;

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> OWASP | Meetings </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="slide-menu">
+        <div class="wrap">
+            <ul>
+                <li><img src="./assets/logo/img_258083.png" class="user-logo"></li>
+                <li>Welcome!</li>
+                <li>
+                    <i class="fas fa-user"></i>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <i class="far fa-calendar-check"></i>
+                    <a href="#" class="current">Meetings</a>
+                </li>
+                <li>
+                    <i class="fas fa-laptop-code"></i>
+                    <a href="logged_in.html">Workshops</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope-open-text"></i>
+                    <a href="suggestions.html">Suggestions</a>
+                </li>
+                <li>
+                    <i class="fas fa-sign-out-alt"></i>
+                    <a href="index.html">Sign Out</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Content panel -->
+
+    
+    <div id="content">
+    <div class="menu-trigger"></div>
+    <div class="meetings">
+            <div class="heading"> Ongoing Meetings </div>
+        <div class="meetings-out">
+            <div class="meetings-in">
+                <div></div>
+                <div class="meetings-name">
+                    <i class="fas fa-edit"></i> Future Plans
+                </div>
+                <div class="meetings-attendance">
+                    <a href="" title="Click here to mark your attendance"><button class="meetings-button"> <i class="fas fa-calendar-check"></i> Mark your Attendance </button></a>
+                </div>
+                <div class="meetings-time">
+                    <i class="fas fa-clock"></i> 18:00 - 20:00 P.M.
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="meetings">
+        <div class="heading"> Upcoming Meetings </div>
+    <div class="meetings-out">
+        <div class="meetings-in">
+            <div></div>
+            <div class="meetings-name">
+                <i class="fas fa-edit"></i> Unnoficial Meeting
+            </div>
+            <div class="meetings-date">
+                <i class="fas fa-calendar-week"></i> 26th December 2020
+            </div>
+            <div class="meetings-time">
+                <i class="fas fa-clock"></i> 17:00 - 20:00 P.M.
+            </div>
+            <div></div>
+        </div>
+
+        <div class="meetings-in">
+            <div></div>
+            <div class="meetings-name">
+                <i class="fas fa-edit"></i> HackOwasp Meeting
+            </div>
+            <div class="meetings-date">
+                <i class="fas fa-calendar-week"></i> 30th December 2020
+            </div>
+            <div class="meetings-time">
+                <i class="fas fa-clock"></i> 19:00 - 21:00 P.M.
+            </div>
+            <div></div>
+        </div>
+
+        <div class="meetings-in">
+            <div></div>
+            <div class="meetings-name">
+                <i class="fas fa-edit"></i> Marketing Meeting
+            </div>
+            <div class="meetings-date">
+                <i class="fas fa-calendar-week"></i> 12th January 2021
+            </div>
+            <div class="meetings-time">
+                <i class="fas fa-clock"></i> 18:00 - 20:00 P.M.
+            </div>
+            <div></div>
+        </div>
+
+    </div>
+</div>
+</div>
+<script>
+    const button = document.querySelector(".meetings-button");
+
+    button.addEventListener('click', popup);
+
+    function popup() {
+        alert("Your Attendance has been marked!");
+    }    
+</script>
+<script src="./assets/js/dashboard.js"></script>
+
+</body>
+</html>
