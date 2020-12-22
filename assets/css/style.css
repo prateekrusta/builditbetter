@@ -489,6 +489,7 @@ a.btnprat-after {
   letter-spacing: 1px;
   padding-top: 20px;
   text-align: center;
+  line-height: 1.4rem;
 }
 .fields-in:hover {
   background-color: #fc2956;
@@ -780,4 +781,7 @@ textarea:focus {
     font-size: 1.8rem;
     margin-bottom: 40px;
   }
+}
+.heading {
+  font-family: "Dosis", sans-serif !important;
 }

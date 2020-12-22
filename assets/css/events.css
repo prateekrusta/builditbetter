@@ -15,7 +15,7 @@ body {
   font-weight: 300;
 }
 
-.ayush .heading{
+.ayush .heading {
   color: #fc2956;
   font-family: "Poppins", sans-serif;
   font-size: 50px;
@@ -57,7 +57,7 @@ button:focus {
 nav {
   height: 70px;
   width: 100vw;
-  background: #0f0c29; 
+  background: #0f0c29;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -308,15 +308,15 @@ nav.logo {
   margin-bottom: 30px;
 }
 
-#hello:focus{
+#hello:focus {
   outline: none;
 }
 
-#hello-submit:focus{
+#hello-submit:focus {
   outline: none;
 }
 
-#hello{
+#hello {
   border-radius: 20px;
   border: 2px solid #fc2956;
   padding: 10px;
@@ -324,11 +324,11 @@ nav.logo {
   width: 50%;
   margin-top: 10px;
   margin-bottom: 10px;
-   font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
 
-#hello-submit{
+#hello-submit {
   border-radius: 30px;
   padding: 10px 20px;
   border: none;
@@ -366,6 +366,7 @@ nav.logo {
 }
 
 .items {
+  font-family: "Dosis", sans-serif !important;
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -445,6 +446,7 @@ nav.logo {
   left: 25%;
   right: 25%;
   transform: translateY(-50%);
+  font-weight: 600;
 }
 .item-text-title {
   font-size: 2rem;
