@@ -25,7 +25,7 @@ html {
   border-radius: 10px;
 }
 .wrap ul li:hover {
-  background: #333;
+  background: rgb(72, 71, 71);
 }
 
 .wrap ul li:first-child,
@@ -284,18 +284,18 @@ textarea:focus {
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
-  border: 1.5px solid #fc2956;
+  /* border: 1.5px solid #fc2956; */
   border-bottom: 1px solid #fc2956;
   padding: 20px;
 }
 
 .team-in:first-child {
-  border-top: 2px solid #fc2956;
+  border-top: 1px solid #fc2956;
   margin-top: 60px;
 }
 
 .team-in:last-child {
-  border-bottom: 2px solid #fc2956;
+  /* border-bottom: 2px solid #fc2956; */
 }
 
 .team-photo,
