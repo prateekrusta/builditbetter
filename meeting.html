@@ -133,7 +133,7 @@
     const date= new Date();
     const timer=document.getElementById("meetingtimer");
     console.log(date.getHours());
-    const min = date.getMinutes() <= 30 ? 0 : 30;
+    const min = date.getMinutes() <= 30 ? 00 : 30;
     timer.innerHTML=`<i class="fas fa-clock"></i> ${date.getHours()}:${min} - ${date.getHours()+2}:${min}`
     
 </script>
