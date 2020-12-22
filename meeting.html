@@ -65,7 +65,7 @@
                 <div class="meetings-attendance">
                     <a href="" title="Click here to mark your attendance"><button class="meetings-button"> <i class="fas fa-calendar-check"></i> Mark your Attendance </button></a>
                 </div>
-                <div class="meetings-time">
+                <div class="meetings-time" id="meetingtimer">
                     <i class="fas fa-clock"></i> 18:00 - 20:00 P.M.
                 </div>
                 <div></div>
@@ -86,7 +86,7 @@
                 <i class="fas fa-calendar-week"></i> 26th December 2020
             </div>
             <div class="meetings-time">
-                <i class="fas fa-clock"></i> 17:00 - 20:00 P.M.
+                <i class="fas fa-clock"></i> 17:00 - 20:00 
             </div>
             <div></div>
         </div>
@@ -100,7 +100,7 @@
                 <i class="fas fa-calendar-week"></i> 30th December 2020
             </div>
             <div class="meetings-time">
-                <i class="fas fa-clock"></i> 19:00 - 21:00 P.M.
+                <i class="fas fa-clock"></i> 19:00 - 21:00 
             </div>
             <div></div>
         </div>
@@ -114,7 +114,7 @@
                 <i class="fas fa-calendar-week"></i> 12th January 2021
             </div>
             <div class="meetings-time">
-                <i class="fas fa-clock"></i> 18:00 - 20:00 P.M.
+                <i class="fas fa-clock"></i> 18:00 - 20:00 
             </div>
             <div></div>
         </div>
@@ -130,6 +130,12 @@
     function popup() {
         alert("Your Attendance has been marked!");
     }    
+    const date= new Date();
+    const timer=document.getElementById("meetingtimer");
+    console.log(date.getHours());
+    const min = date.getMinutes() <= 30 ? 0 : 30;
+    timer.innerHTML=`<i class="fas fa-clock"></i> ${date.getHours()}:${min} - ${date.getHours()+2}:${min}`
+    
 </script>
 <script src="./assets/js/dashboard.js"></script>
 
