@@ -294,10 +294,6 @@ textarea:focus {
   margin-top: 60px;
 }
 
-.team-in:last-child {
-  /* border-bottom: 2px solid #fc2956; */
-}
-
 .team-photo,
 .team-position,
 .team-member,
@@ -337,20 +333,33 @@ textarea:focus {
   padding: 50px 100px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
-
-.social-media-buttons{
-  display: grid;
-  margin-top: 50px;
-  grid-template-columns: 8fr 2fr 2fr 2fr 2fr 8fr;
+.social-handles {
+  margin-top: 100px;
+  margin-left: 39%;
 }
-
-.social-in i{
+.social-media-buttons {
+  display: flex;
+  flex-direction: row;
+}
+.social-media-buttons li {
+  list-style: none;
+  margin: 0 20px;
+}
+.social-media-buttons li:last-child {
+  margin-left: 0;
+}
+.social-in i {
   color: #fc2956;
+  transition: all 0.3s ease-in-out;
+}
+.social-in a:hover i {
+  color: #556270;
 }
 
 .bg-fields {
   background: url("../images/backback.png");
 }
+
 .parallax {
   background-position: top center;
   background-repeat: no-repeat;

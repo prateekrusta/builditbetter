@@ -423,7 +423,6 @@ a.btnprat-after {
   margin: 0 70px;
 }
 
-
 .bg-fields {
   background: url("../images/backback.png");
 }
@@ -462,8 +461,8 @@ a.btnprat-after {
   background: #0f0c29;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background-attachment: fixed;
   height: auto;
-  
 }
 
 .fields .heading {
@@ -496,6 +495,11 @@ a.btnprat-after {
   border-radius: 20px;
   padding: 30px;
   transition: all 0.7s ease-in-out;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  opacity: 0.9;
+  background-attachment: fixed;
 }
 
 .fields-in p {
@@ -506,8 +510,9 @@ a.btnprat-after {
   line-height: 1.4rem;
 }
 .fields-in:hover {
-  background-color: #fc2956;
+  background: #fc2956;
   border-radius: 50px;
+  opacity: 1;
 }
 .fields-in:hover .icons i {
   color: #0f0c29;
