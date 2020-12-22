@@ -337,3 +337,26 @@ textarea:focus {
   padding: 50px 100px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
+
+.social-media-buttons{
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 8fr 2fr 2fr 2fr 2fr 8fr;
+}
+
+.social-in i{
+  color: #fc2956;
+}
+
+.bg-fields {
+  background: url("../images/backback.png");
+}
+.parallax {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}

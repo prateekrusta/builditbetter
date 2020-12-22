@@ -424,12 +424,17 @@ a.btnprat-after {
 }
 
 
-.parallax{
-  background-attachment: fixed;
-  background-position: center;
+.bg-fields {
+  background: url("../images/backback.png");
+}
+.parallax {
+  background-position: top center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
   background-size: cover;
-  background: url("../images/items/codigo.jpg");
 }
 
 .about-in-2 {
