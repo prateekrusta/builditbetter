@@ -356,7 +356,6 @@ nav.logo {
   background: #0f0c29;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  background-attachment: fixed;
   height: 100vh;
   padding-left: 100px;
   justify-content: space-between;
@@ -424,6 +423,15 @@ a.btnprat-after {
   margin: 0 70px;
 }
 
+
+.parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("../images/items/codigo.jpg");
+}
+
 .about-in-2 {
   padding: 50px;
   margin-left: 50px;
@@ -449,8 +457,8 @@ a.btnprat-after {
   background: #0f0c29;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  background-attachment: fixed;
   height: auto;
+  
 }
 
 .fields .heading {
@@ -505,7 +513,6 @@ a.btnprat-after {
   background: #0f0c29;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  background-attachment: fixed;
   height: auto;
 }
 
@@ -645,7 +652,6 @@ textarea:focus {
   background: #0f0c29;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  background-attachment: fixed;
   text-align: center;
   justify-content: space-between;
   padding: 20px;
