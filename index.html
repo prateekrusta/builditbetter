@@ -325,6 +325,10 @@
     document.getElementById("forget").addEventListener("click", ()=>{
         const response=prompt("Enter your registered Email ID : ")
 
+        if(response){
+            alert(`Password reset link sent to ${response}!`)
+        }
+
         console.log(response)
     })
 
