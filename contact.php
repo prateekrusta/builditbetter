@@ -7,13 +7,14 @@ $messages = $_POST['messages'];
 
 if(!empty($names) || !empty($email) || !empty($subjects) || !empty($messages) )
 {
-    $host = "localhost";
-    $dbname = "owasp";
-    $dbUsername = "root";
-    $dbPassword = "";
+    $host = "sql12.freesqldatabase.com";
+    $dbname = "sql12579871";
+    $dbUsername = "sql12579871";
+    $dbPassword = "bMzjcsnss4";
+    $dbPort = "3306";
     
 
-    $conn = mysqli_connect(hostname: $host, username: $dbUsername, password: $dbPassword, database: $dbname);
+    $conn = mysqli_connect(hostname: $host, username: $dbUsername, password: $dbPassword, database: $dbname, port: $dbPort);
     if (mysqli_connect_error()) {
         die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
     }
