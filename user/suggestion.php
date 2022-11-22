@@ -80,10 +80,10 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
                 <div class="suggestions-in" align="center" style="padding-left: 200px; padding-right: 200px;">
                     <form>
                         <div class="subject-box">
-                            <input type="text" placeholder="Subject" name="subjectss" id="subjectss" required>
+                            <input type="text" placeholder="Subject" name="subjectss" id="subjectss" autocomplete="off" required>
                         </div>
                         <div class="suggestions-box">
-                            <textarea placeholder="Your Suggestions here" class="suggestions-box" name="messagess" id="messagess" required></textarea>
+                            <textarea placeholder="Your Suggestions here" class="suggestions-box" name="messagess" id="messagess" autocomplete="off" required></textarea>
                         </div>
                         <div class="submit-btn-prat">
                             <button class="submit-prat">Send Message</button>
