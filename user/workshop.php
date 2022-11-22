@@ -1,3 +1,15 @@
+<?php
+
+session_start();
+
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
+{
+    header("location: ../index.html");
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +19,8 @@
 
     <link rel="icon" href="./assets/logo/favicon.png" type="image/png" sizes="16x16">
 
-    <link rel="stylesheet" href="./assets/css/dashboard.css">
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
@@ -20,15 +32,15 @@
     <nav id="slide-menu">
         <div class="wrap">
             <ul>
-                <li><img src="./assets/logo/img_258083.png" class="user-logo"></li>
+                <li><img src="../assets/logo/img_258083.png" class="user-logo"></li>
                 <li>Welcome!</li>
                 <li>
                     
-                    <a href="home.html"><i class="fas fa-user"></i>Home</a>
+                    <a href="home.php"><i class="fas fa-user"></i>Home</a>
                 </li>
                 <li>
                     
-                    <a href="meeting.html"><i class="far fa-calendar-check"></i>Meetings</a>
+                    <a href="meeting.php"><i class="far fa-calendar-check"></i>Meetings</a>
                 </li>
                 <li>
                     
@@ -36,15 +48,19 @@
                 </li>
                 <li>
                     
-                    <a href="team.html"><i class="fas fa-users"></i>Team</a>
+                    <a href="./calendar.php"><i class="fas fa-envelope-open-text"></i>Calendar</a>
                 </li>
                 <li>
                     
-                    <a href="suggestion.html"><i class="fas fa-envelope-open-text"></i>Suggestions</a>
+                    <a href="team.php"><i class="fas fa-users"></i>Team</a>
                 </li>
                 <li>
                     
-                    <a href="index.html"><i class="fas fa-sign-out-alt"></i>Sign Out</a>
+                    <a href="suggestion.php"><i class="fas fa-envelope-open-text"></i>Suggestions</a>
+                </li>
+                <li>
+                    
+                    <a href="../auth/logout.php"><i class="fas fa-sign-out-alt"></i>Sign Out</a>
                 </li>
 
             </ul>
@@ -63,7 +79,7 @@
             <div class="list">
                 <div class="list-items">             
                     <div>
-                        <img src="./assets/images/items/coding.jpg" alt="">
+                        <img src="../assets/images/items/coding.jpg" alt="">
                     </div>
                     <div>
                         <h3>Competitive Coding</h3>
@@ -73,7 +89,7 @@
                 </div>
                 <div class="list-items">               
                     <div>
-                        <img src="./assets/images/items/webd.jpg" alt="">
+                        <img src="../assets/images/items/webd.jpg" alt="">
                     </div>
                     <div>
                         <h3>Web Development</h3>
@@ -83,7 +99,7 @@
                 </div>
                 <div class="list-items">                   
                     <div>
-                        <img src="./assets/images/items/graphic.png" alt="">
+                        <img src="../assets/images/items/graphic.png" alt="">
                     </div>
                     <div>
                         <h3>Graphic Designing</h3>
@@ -93,7 +109,7 @@
                 </div>
                 <div class="list-items">
                     <div>
-                        <img src="./assets/images/items/python.jpg" alt="">
+                        <img src="../assets/images/items/python.jpg" alt="">
                     </div>
                     <div>
                         <h3>ML and AI with Python</h3>
@@ -118,6 +134,6 @@
     
     </script>
 
-    <script src="./assets/js/dashboard.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
 </body>
 </html>

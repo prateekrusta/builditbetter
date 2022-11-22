@@ -278,11 +278,13 @@ nav.logo {
   outline: none;
   background: none;
   font-size: 24px;
-  color: #747474;
+  color: white;
+  transition: text-shadow 0.3s;
   font-weight: bold;
 }
 .modal__close:hover {
-  color: #000;
+  color: white;
+  text-shadow: 0 0 10px #fff;
 }
 .modal__container {
   position: relative;
@@ -297,6 +299,8 @@ nav.logo {
   padding: 30px;
   background-color: #fff;
   text-align: center;
+  border-radius: 200px !important;
+ 
 }
 
 .modal .heading {
