@@ -36,7 +36,8 @@ if(!empty($names) || !empty($email) || !empty($subjects) || !empty($messages) )
         
         mysqli_stmt_execute($stmt);
         
-        echo "Record saved.";
+        header("location: index.html");
+        echo "<script>alert('Message Submitted!');</script>";
         
         $stmt->close();
         $conn->close();

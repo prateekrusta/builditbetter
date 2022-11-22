@@ -32,6 +32,7 @@ if(!empty($subjectss) || !empty($messagess) )
         
         mysqli_stmt_execute($stmt);
         
+        header("location: suggestion.php");
         echo "Record saved.";
         
         $stmt->close();
